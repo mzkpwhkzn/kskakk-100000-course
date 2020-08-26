@@ -1,0 +1,16 @@
+title: Kskakk 100000
+description: '100000'
+template:
+  repo: kskakk-100000-template
+  name: kskakk-100000
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
